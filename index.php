@@ -3,8 +3,8 @@
 $server_key = "SB-Mid-server-O1M4fhvjRBlma7rKx9_fTMRh";
 
 $is_production = false;
-$api_url = $is_production ? 'https://app.midtrans.com/snap/v1/transactions' :
-			'https://app.sanbox.midtrans.com/snap/v1/transactions';
+$api_url = $is_production ? 'https://app.midtrans.com/snap/v2/charge' :
+			'https://app.sanbox.midtrans.com/snap/v2/charge';
 
 if(!strpos($_SERVER['REQUEST_URL'],'/charge')){
 	http_response_code(404);
